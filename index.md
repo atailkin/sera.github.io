@@ -1,27 +1,50 @@
-# Proposal: Going Out on a Date? 💌
-
-## Overview
-This project aims to explore the possibility of an amazing experience shared between two incredible people—YOU and ME.  
-
-## Mission Statement
-To create unforgettable memories, share meaningful conversations, and enjoy laughter while discovering if we are more than just friends.  
-
-## Features
-- 🍕 Dinner or 🍣 Sushi? (User selects preference)  
-- 🎥 Movie night or 🌌 Stargazing? (Interactive decision-making)  
-- 🚶‍♂️ Long walk or 🎮 Game night? (Customizable experience)  
-
-## Requirements
-- Open-mindedness ❤️  
-- A sense of adventure 🌟  
-- An answer to the following question:
-
-### **Will you go out with me?**  
-
-## Next Steps
-- [ ] Accept  
-- [ ] Consider  
-- [ ] Suggest another time  
-
-## Contact Information
-[Text me!] or [Call me!] if you’re ready to compile this adventure! 🚀  
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim olur musun?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Benim olur musun?</h1>
+  <p>Sera.<br>
+  Seninle beraber aniden uyuşmamız ve birbirimize olan sevgimiz, aşkımız, sana ne kadar değer verdiğim ve seninle geçirdiğim zamanların adına seninle çıkmak istiyorum.</p>
+  <div class="button-container">
+    <button class="yes" onclick="alert('Evet! 💖')">Evet.</button>
+    <button class="no" onclick="alert('No :( 😢')">No :(</button>
+  </div>
+</body>
+</html>
