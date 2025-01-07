@@ -1,19 +1,27 @@
----
-title: Seram
----
+# Proposal: Going Out on a Date? 💌
 
-# site test
+## Overview
+This project aims to explore the possibility of an amazing experience shared between two incredible people—YOU and ME.  
 
-This is a sample GitHub Pages site using the Architect theme.
+## Mission Statement
+To create unforgettable memories, share meaningful conversations, and enjoy laughter while discovering if we are more than just friends.  
 
-## butonlar
+## Features
+- 🍕 Dinner or 🍣 Sushi? (User selects preference)  
+- 🎥 Movie night or 🌌 Stargazing? (Interactive decision-making)  
+- 🚶‍♂️ Long walk or 🎮 Game night? (Customizable experience)  
 
-<div style="text-align: center;">
-  <a href="https://example.com" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; margin: 5px;">Button 1</button>
-  </a>
+## Requirements
+- Open-mindedness ❤️  
+- A sense of adventure 🌟  
+- An answer to the following question:
 
-  <a href="https://example.com" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; margin: 5px;">Button 2</button>
-  </a>
-</div>
+### **Will you go out with me?**  
+
+## Next Steps
+- [ ] Accept  
+- [ ] Consider  
+- [ ] Suggest another time  
+
+## Contact Information
+[Text me!] or [Call me!] if you’re ready to compile this adventure! 🚀  
