@@ -13,19 +13,25 @@
       padding: 20px;
       background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
       overflow: hidden;
+      margin: 0; /* Remove default margin */
+      height: 100vh; /* Ensure the body takes up the full height of the viewport */
     }
+
     h1 {
       color: #333;
       font-family: 'Dancing Script', cursive;
       font-size: 3em;
     }
+
     p {
       font-size: 18px;
       margin: 20px 0;
     }
+
     .button-container {
       margin-top: 20px;
     }
+
     button {
       padding: 20px 40px;
       margin: 10px;
@@ -36,27 +42,33 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     button:hover {
       transform: scale(1.1);
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     }
+
     .yes {
       background-color: #4CAF50;
       color: white;
     }
+
     .no {
       background-color: #f44336;
       color: white;
     }
+
     @keyframes hearts {
       0% { transform: translateY(0); opacity: 1; }
       100% { transform: translateY(-100vh); opacity: 0; }
     }
+
     .heart {
       position: absolute;
       color: red;
       font-size: 20px;
       animation: hearts 5s linear infinite;
+      pointer-events: none; /* Prevent the hearts from interfering with other elements */
     }
   </style>
 </head>
@@ -66,19 +78,21 @@
   Seninle beraber aniden uyuşmamız ve birbirimize olan sevgimiz, aşkımız, sana ne kadar değer verdiğim ve seninle geçirdiğim zamanların adına benle çıkar mısın?</p>
   <div class="button-container">
     <button class="yes" onclick="alert('💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖')">Evet.</button>
-    <button class="no" onclick="alert('😢😢😢😢😢😢😢😢😢😢😢😢😢')">Hayır. :(</button>
+    <button class="no" onclick="alert('😢😢😢😢😢😢😢😢😢😢😢😢😢')">Hayır :(</button>
   </div>
   <script>
     function createHeart() {
       const heart = document.createElement('div');
       heart.classList.add('heart');
       heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+      heart.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+      heart.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+      heart.style.animationDuration = Math.random() * 2 + 3 + 's'; // Random animation speed
       document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 5000);
+      setTimeout(() => heart.remove(), 5000); // Remove the heart after animation
     }
-    setInterval(createHeart, 300);
+
+    setInterval(createHeart, 300); // Create a heart every 300ms
   </script>
 </body>
 </html>
